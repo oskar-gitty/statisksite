@@ -22,11 +22,11 @@
 }
 
 .navbar a:hover {
-  background-color: #ddd;
-  color: black;
+  background-color: #1f3e8f;
+  color: rgb(181, 191, 255);
 }
 .header {
-  background-color: #f39ad8;
+  background-color: rgb(24, 105, 186);
   padding: 20px;
   text-align: center;
   border: #000000 solid 3px;
@@ -75,10 +75,24 @@ body {
 }
 main {
   font-family: monospace;
+  margin: 10px;
 }
 .infobox {
   padding: 10px;
   border: #000000 solid 2px;
   background-color: rgb(154, 204, 255);
   border-radius: 5px;
+}
+.categories {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
+}
+.categories a {
+  padding: 10px;
+  border: #000000 solid 2px;
+  background-color: rgb(24, 105, 186);
+
+  text-decoration: none;
+  color: black;
 }
