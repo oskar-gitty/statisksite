@@ -1,0 +1,84 @@
+.navbar {
+  background-color: #1f388a;
+  overflow: hidden;
+  border: #000000 solid 3px;
+}
+
+.navbar ul {
+  margin: 0;
+  padding: 0;
+}
+
+.navbar li {
+  float: left;
+}
+
+.navbar a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+.header {
+  background-color: #f39ad8;
+  padding: 20px;
+  text-align: center;
+  border: #000000 solid 3px;
+  margin: 10px;
+}
+.p1 {
+  background-color: #5f6fed;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 5px;
+}
+.cards1 {
+  display: flex;
+  gap: 10px;
+  border: #000000 solid 3px;
+  margin: 10px;
+  align-self: start;
+  background-color: #5f6fed;
+}
+
+.cards1 > div {
+  flex: 1; /* each card takes equal width */
+}
+
+.cards1 img {
+  width: 100%;
+  height: auto;
+}
+.cta1 {
+  background-color: #5f6fed;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 5px;
+  justify-content: center;
+}
+.p2 {
+  background-color: #5f6fed;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 5px;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+body {
+  background-color: rgb(158, 192, 250);
+}
+main {
+  font-family: monospace;
+}
+.infobox {
+  padding: 10px;
+  border: #000000 solid 2px;
+  background-color: rgb(154, 204, 255);
+  border-radius: 5px;
+}
