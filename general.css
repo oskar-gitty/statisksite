@@ -48,7 +48,7 @@
 }
 
 .cards1 > div {
-  flex: 1; /* each card takes equal width */
+  flex: 1;
 }
 
 .cards1 img {
@@ -95,4 +95,41 @@ main {
 
   text-decoration: none;
   color: black;
+}
+
+.productContainer {
+  padding: 20px;
+  border: #000000 solid 2px;
+  background-color: rgb(154, 204, 255);
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.productContainer img {
+  width: 100%;
+  height: auto;
+}
+
+.salelabel {
+  font-weight: bold;
+  color: red;
+}
+.productDetails {
+  margin-top: 10px;
+}
+.productName {
+  font-size: 1.5em;
+  margin-bottom: 5px;
+}
+.articleType {
+  font-size: 1.2em;
+  margin-bottom: 5px;
+}
+.productCategory {
+  font-size: 1.2em;
+  margin-bottom: 5px;
+}
+.productPrice {
+  font-size: 1.2em;
+  margin-bottom: 5px;
 }
