@@ -16,11 +16,11 @@ fetch(`https://kea-alt-del.dk/t7/api/products/${id}`)
       <section class="productDetails">
       <h2 class="productName">${data.productdisplayname}</h2>
       <div>
-      
+      <p class="${data.soldout ? "" : "displaynone"}">Sold out</p>
       <p class="articleType"><span class="bold">Type: </span> ${data.articletype}</p>
       <p class="productCategory"><span class="bold">Kategori: </span> ${data.category}</p>
       <p class="productPrice"><span class="bold">Pris: </span> ${data.price}</p>
-      <p class="${data.discount ? "" : "displaynone"}">${data.discount} % Discount</p>
+      <p class="${data.discount ? "" : "displaynone"}">${data.discount} %</p>
       <p class="${data.discount ? "" : "displaynone"}">Now DKK <span>${Math.ceil((data.price / 100) * data.discount)}</span></p>
       </div>
         <button>Add to Cart</button>
