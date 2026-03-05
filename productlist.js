@@ -20,13 +20,13 @@ function showProducts(productsArr) {
     productContainer.innerHTML += `
       <article class="smallProduct">
       <img src="https://kea-alt-del.dk/t7/images/webp/640/${product.id}.webp" alt="${product.productdisplayname}">
-
+      <p class="${product.soldout ? "" : "displaynone"}">sold out</p>
+      
       <h3>${product.productdisplayname}</h3>
-      <p class="soldoutTxt color_me_black_and_red">${product.soldout ? "Sold Out" : ""}</p>
       <p class="price">${product.price} DKK</p>
+      <p class="${product.discount ? "" : "displaynone"}">${product.discount} % Discount</p>
+      <p class="${product.discount ? "" : "displaynone"}">Now DKK <span>${Math.ceil((product.price / 100) * product.discount)}</span></p>
       <div class="discounted_element">
-      <p>${product.discounted ? product.discountedPrice : ""} DKK</p>
-      <p class="color_me_black_and_red"><span></span>${product.price} DKK</p>
       </div>
       
       <a href="productdetails.html?id=${product.id}">View Details</a>

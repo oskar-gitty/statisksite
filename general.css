@@ -133,3 +133,6 @@ main {
   font-size: 1.2em;
   margin-bottom: 5px;
 }
+.displaynone {
+  display: none;
+}
