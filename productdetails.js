@@ -11,7 +11,7 @@ fetch(`https://kea-alt-del.dk/t7/api/products/${id}`)
       <main>
       </figure>
       <img src="https://kea-alt-del.dk/t7/images/webp/640/${data.id}.webp" alt="${data.productdisplayname}">
-      <span class="salelabel">Udsalg!</span>
+      <span class="salelabel"></span>
       <figure>
       <section class="productDetails">
       <h2 class="productName">${data.productdisplayname}</h2>

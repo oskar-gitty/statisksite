@@ -22,7 +22,7 @@ function showProducts(productsArr) {
       <img src="https://kea-alt-del.dk/t7/images/webp/640/${product.id}.webp" alt="${product.productdisplayname}">
 
       <h3>${product.productdisplayname}</h3>
-      <p class="soldoutTxt color_me_black_and_red">Sold Out</p>
+      <p class="soldoutTxt color_me_black_and_red">${product.soldout ? "Sold Out" : ""}</p>
       <p class="price">${product.price} DKK</p>
       <div class="discounted_element">
       <p>${product.discounted ? product.discountedPrice : ""} DKK</p>
